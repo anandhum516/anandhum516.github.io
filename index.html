@@ -1,63 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profile Page</title>
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link href="styles.css" rel="stylesheet" >
-  <style>
-    /* Custom styles for the profile page */
-    .profile-pic {
-      max-width: 50%;
-      height: auto;
-    }
-    @media (max-width: 768px) {
-      .profile-pic {
-        max-width: 50%;
-      }
-      .container { 
-        flex-direction: column; 
-      }
-  
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anandhu M - Profile</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        /* Custom styles for the profile page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('image.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        .freeze {
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            background-image: url('imagecard.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .card-body {
+            color: #333;
+        }
+
+        .card-title {
+    background: linear-gradient(45deg, #3498db, #9b59b6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    color: #f7f7f7;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+        .list-unstyled li {
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: #fff;
+            border-color: #3498db;
+            padding: 8px 20px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="photo.jpeg" class="card-img-top profile-pic" alt="Profile Picture">
-          <div class="card-body">
-            <h3 class="card-title">Anandhu M</h3>
-            <p class="card-text">M.Tech in Computer Science (Artificial Intelligence and Machine Learning) student with strong project experience in developing a Complaint Cell app and website. Skilled in Python, HTML, CSS, and Machine Learning. Winner of a UI/UX design competition. Currently pursuing Full Stack web development certifications. Proven soft skills in team management, adaptability, and critical thinking. Seeking opportunities in technology with a focus on machine learning and database management.</p>
-          </div>
+    <div class="container mt-5 fade-in">
+        <div class="row justify-content-center">
+            <!-- Profile Card -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">ANANDHU M</h3>
+                        <p class="card-text">M.Tech in Computer Science (AI & ML) student with a strong project background. Skilled in Python, HTML, CSS, and Machine Learning. Winner of a UI/UX design competition.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-body">
-            <h3 class="card-title">Education</h3>
-            <ul>
-              <li><strong>Master of Technology in Computer Science Engineering (AI and ML)</strong><br>Amrita School of Computing, Amrita Vishwa Vidyapeetham<br>CGPA: 8.45</li>
-              <li><strong>Bachelor of Technology in Computer Science Engineering</strong><br>A P J Abdul Kalam Technological University<br>CGPA: 7.82</li>
-              <li><strong>Higher Secondary</strong><br>Central Board of Secondary Education<br>CGPA: 8.2</li>
-              <li><strong>High School</strong><br>Central Board of Secondary Education<br>CGPA: 7.6</li>
-            </ul>
-            <h3 class="card-title">GitHub Projects</h3>
-            <ul>
-              <li><a href="https://anandhum516.github.io/tictoe">Tic Tac Toe Game</a></li>
-              <li><a href="wordle.html">Wordle Game</a></li>
-              <li><a href="album2.html">Album</a></li>
-            </ul>
-          </div>
+        <!-- Education & Projects Card -->
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">EDUCATIONS</h3>
+                        <ul class="list-unstyled">
+                            <li><strong>Master of Technology in CS Engineering (AI & ML)</strong><br>Amrita School of Computing, Amrita Vishwa Vidyapeetham<br>CGPA: 8.45</li>
+                            <li><strong>Bachelor of Technology in CS Engineering</strong><br>A P J Abdul Kalam Technological University<br>CGPA: 7.82</li>
+                            <li><strong>Higher Secondary</strong><br>Central Board of Secondary Education<br>CGPA: 8.2</li>
+                            <li><strong>High School</strong><br>Central Board of Secondary Education<br>CGPA: 7.6</li>
+                        </ul>
+                        <h3 class="card-title mt-4">GITHUBS PROJECTS</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="tictoe2.html" class="btn btn-primary btn-block">Tic Tac Toe Game</a></li>
+                            <li><a href="wordle.html" class="btn btn-primary btn-block">Wordle Game</a></li>
+                            <li><a href="album2.html" class="btn btn-primary btn-block">Album</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap and JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.container');
+            
+            container.addEventListener('animationend', function() {
+                container.classList.add('freeze');
+            });
+        });
+    </script>
 </body>
+
 </html>
