@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet" >
+  <style>
+    /* Custom styles for the profile page */
+    .profile-pic {
+      max-width: 50%;
+      height: auto;
+    }
+    @media (max-width: 768px) {
+      .profile-pic {
+        max-width: 50%;
+      }
+      .container { 
+        flex-direction: column; 
+      }
+  
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="photo.jpeg" class="card-img-top profile-pic" alt="Profile Picture">
+          <div class="card-body">
+            <h3 class="card-title">Anandhu M</h3>
+            <p class="card-text">M.Tech in Computer Science (Artificial Intelligence and Machine Learning) student with strong project experience in developing a Complaint Cell app and website. Skilled in Python, HTML, CSS, and Machine Learning. Winner of a UI/UX design competition. Currently pursuing Full Stack web development certifications. Proven soft skills in team management, adaptability, and critical thinking. Seeking opportunities in technology with a focus on machine learning and database management.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Education</h3>
+            <ul>
+              <li><strong>Master of Technology in Computer Science Engineering (AI and ML)</strong><br>Amrita School of Computing, Amrita Vishwa Vidyapeetham<br>CGPA: 8.45</li>
+              <li><strong>Bachelor of Technology in Computer Science Engineering</strong><br>A P J Abdul Kalam Technological University<br>CGPA: 7.82</li>
+              <li><strong>Higher Secondary</strong><br>Central Board of Secondary Education<br>CGPA: 8.2</li>
+              <li><strong>High School</strong><br>Central Board of Secondary Education<br>CGPA: 7.6</li>
+            </ul>
+            <h3 class="card-title">GitHub Projects</h3>
+            <ul>
+              <li><a href="tictoe2.html">Tic Tac Toe Game</a></li>
+              <li><a href="wordle.html">Wordle Game</a></li>
+              <li><a href="album2.html">Album</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
